@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Guessing game by ketak</title>
+  <script>
+  var number = Math.floor(Math.random() * 100 + 1);
+  var tries = 0;
+  function newGame(){
+    number = Math.floor(Math.random() * 100 + 1);
+    document.getElementById("guess").focus();
+    document.getElementById("guess").select();
+    tries = 0;
+  }
+  function checkGuess(){
+    var guess = document.getElementById("guess").value;
+    var msg = "";
+    tries++;
+    if (guess > number)
+      msg = guess + " was too high. Try again.";
+    else if (guess < number)
+      msg = guess + " was too low. Try again.";
+    else{
+      msg = guess + " was the number! you won! thanks for playing.";
+      msg = msg + " Try a new game :)";
+      msg = msg + " you won in " + tries + " tries."
+
+      var scoreBoard = document.getElementById("scoreBoard")
+      scoreBoard.innerHTML =
+        "you guessed " + guess + " in " + tries + " tries. <br>" +
+         scoreBoard.innerHTML;
+
+      newGame()
+    }
+    var output = document.getElementById("output");
+    output.innerHTML = msg;
+    document.getElementById("guess").focus();
+    document.getElementById("guess").select();
+  }
+  </script>
+</head>
+<body onload="newGame( )" bgcolor="indigo">
+  <h1><b>Guessing game</b></h1>
+  <h2><i>created by ketak nair</i></h2>
+  <form onsubmit="checkGuess();return false;">
+    Enter a number between 1 and 100 in:
+    <input type="text" id="guess">
+    <button type="button" onclick="checkGuess()"> guess! </button>
+  </form>
+  <h3 id="output">Guess a number and press the button.</h3>
+  <h4 id="scoreBoard"> </h4>
+</body>
+</html>

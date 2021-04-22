@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>welcome to the funny story app</title>
+    <script>
+    function sentenceStory (){
+      var animal = document.getElementById("animal").value  ;
+      var noun = document.getElementById("noun").value  ;
+      var adjective = document.getElementById("adjective").value  ;
+      var verb = document.getElementById("verb").value  ;
+      var story = "There once was a " + animal + ", who was a brave " + noun + ". And, there was a " + adjective + " knight who was about enconter the " + animal + ". The knight took his sword and began to " + verb +" and they all lived happily ever after.The end"
+      document.getElementById("output").innerHTML =
+      story;
+    }
+    </script>
+</head>
+<body style="background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLmA1sXCNy9XhvsFVYjxVrpuNoQKW0wS7qQ&usqp=CAU)">
+  <h1>Funny Story</h1>
+  <h2>-created by ketak</h2>
+  <form>
+    <table>
+      <tr>
+        <td>Enter an animal</td>
+        <td><input type ="text" id="animal"></td>
+      </tr>
+      <tr>
+        <td>Enter a noun</td>
+        <td><input type ="text" id="noun"></td>
+      </tr>
+      <tr>
+        <td>Enter an adjective</td>
+        <td><input type ="text" id="adjective"></td>
+      </tr>
+      <tr>
+        <td>Enter a verb</td>
+        <td><input type ="text" id="verb"></td>
+      </tr>
+    </table>
+  </form>
+    <button type="button" onclick="sentenceStory ()">Click to your funny story.</button>
+    <h3 id="output">There once was a (animal), who was a brave (noun). And, there was a (adjective) knight who was about enconter the (animal). The knight took his sword and began to (verb) and they all lived happily ever after.The end</h3>
+</body>
+</html>

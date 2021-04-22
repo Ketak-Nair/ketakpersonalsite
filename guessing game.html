@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>My First web page </title>
+  </head>
+<body>
+  <h1> Ketak's guessing game web page</h1>
+  <h3>I'm learing javaScript & HTML!</h3>
+  <p> I can mix javaScript programs into my HTML pages -
+        click the button below to see my program I wrote in javaScript</p>
+  <button onclick="var number = Math.round( Math.random() * 100+ 1)
+var guess = '';
+while (guess != number) {
+  guess = prompt('guess a number between 1 & 100')
+  if ( guess > number)
+      alert('too high');
+  else if ( guess < number)
+      alert('too low');
+  else
+      alert('correct! you won!');
+}
+var yourName = prompt('what is your name')
+for ( var n = 0 ; n <=500; n++ ) {
+  document.write( yourName +' wins! :) ' );
+}";>
+<b><i>Click to see my javaScript program! :)</i></b></button>
+</body>
+</html>

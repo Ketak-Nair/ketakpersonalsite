@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>calculator</h1>
+<h3> -created by Ketak Nair</h3>
+<p>Answer comes here.</p>
+
+<p id="demo"></p>
+
+<script>
+function sum(){
+var x = parseInt(document.getElementById("amount").value ) ;
+var y = parseFloat(document.getElementById("rate").value ) ;
+var total = x+y
+document.getElementById("demo").innerHTML = total;
+}
+
+function sub(){
+var x = parseInt(document.getElementById("amount").value ) ;
+var y = parseFloat(document.getElementById("rate").value ) ;
+var total = x-y
+document.getElementById("demo").innerHTML = total;
+}
+
+function multi(){
+var x = parseInt(document.getElementById("amount").value ) ;
+var y = parseFloat(document.getElementById("rate").value ) ;
+var total = x*y
+document.getElementById("demo").innerHTML = total;
+}
+
+function div(){
+var x = parseInt(document.getElementById("amount").value ) ;
+var y = parseFloat(document.getElementById("rate").value ) ;
+var total = x/y
+document.getElementById("demo").innerHTML = total;
+}
+
+</script>
+<form>
+    <table>
+      <tr>
+        <td>Enter first number </td>
+        <td><input type ="text" id="amount"></td>
+      </tr>
+      <tr>
+        <td>Enter second number </td>
+        <td><input type ="text" id="rate"></td>
+      </tr>
+    </table>
+  </form>
+  <button type="button" onclick="sum()">check the sum</button>
+  <button type="button" onclick="sub()">check the difference</button>
+  <button type="button" onclick="multi()">check the product</button>
+  <button type="button" onclick="div()">check the quotient</button>
+
+</body>
+</html>
