@@ -1,0 +1,25 @@
+body {
+  background-color:#28b5b5;
+}
+hr {
+border-style:none;
+border-top-style:dotted;
+color:#b0efeb;
+border-width:5px;
+width:40px;
+}
+h1 {
+  color: #02475e;
+}
+h3{
+  color: #02475e;
+}
+ul {
+font-family:Serif;
+}
+ol {
+font-family:Serif;
+}
+label {
+font-family:Serif;
+}
