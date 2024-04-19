@@ -1,25 +1,63 @@
-body {
-  background-color:#28b5b5;
+body{
+
+  background: linear-gradient(300deg, #3700ff, #25fa6c, #3700ff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
-hr {
-border-style:none;
-border-top-style:dotted;
-color:#b0efeb;
-border-width:5px;
-width:40px;
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-h1 {
-  color: #02475e;
+.profile{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:100px 0px 100px 0px ;
 }
-h3{
-  color: #02475e;
+@media (max-width:576px){
+  .profile{margin: 200px;}
+  .profile > img{margin-right:120px}
+  .card{margin-left:140px;}
+  .title{margin-right: 200px;}
 }
-ul {
-font-family:Serif;
+.profile > p{
+  font-size: 3em;   
 }
-ol {
-font-family:Serif;
+.mid{
+  background-color: #f8f9fa;
+  justify-content: center;
+  align-items: center;
 }
-label {
-font-family:Serif;
+.websites{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.card{
+  margin: 20px;
+}
+.hobbies{
+  margin:20px;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  text-align: center;
+  padding: 20px;
+  padding-bottom:0%;
+}
+.space{
+  margin: 20px;
+}
+#imgCanvas{
+ background-color: white;
 }
