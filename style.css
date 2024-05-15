@@ -61,3 +61,67 @@ body{
 #imgCanvas{
  background-color: white;
 }
+.mid{
+  background-color: white;
+  width: 100%;
+}
+.profile-info{
+  width: 100%;
+}
+.info > p{
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  text-align: center;
+  padding: 100px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-content: center;
+}
+.item{
+  height: 300px;
+  width: 500px;
+  margin:20px ;
+  word-wrap: break-word;
+  padding: 5em;
+  box-shadow: 2px 2px 2px rgb(23, 53, 63);
+  border-radius: 5px;
+  background: linear-gradient(300deg, #ddd4ff, #d1ffe0, #ddd4ff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn-primary:hover{
+  box-shadow:5px 5px 5px rgb(75, 98, 105);
+}
+@media (max-width:992px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+}
+@media (max-width:576px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+  .item{
+    height: 250px;
+    width: 400px;
+  }
+}
