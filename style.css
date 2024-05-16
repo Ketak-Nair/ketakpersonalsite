@@ -15,21 +15,6 @@ body{
     background-position: 0% 50%;
   }
 }
-.profile{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin:100px 0px 100px 0px ;
-}
-@media (max-width:576px){
-  .profile{margin: 200px;}
-  .profile > img{margin-right:120px}
-  .card{margin-left:140px;}
-  .title{margin-right: 200px;}
-}
-.profile > p{
-  font-size: 3em;   
-}
 .mid{
   background-color: #f8f9fa;
   justify-content: center;
@@ -49,14 +34,6 @@ body{
   display:grid;
   justify-content: center;
   align-items: center;
-}
-.title{
-  text-align: center;
-  padding: 20px;
-  padding-bottom:0%;
-}
-.space{
-  margin: 20px;
 }
 #imgCanvas{
  background-color: white;
@@ -109,10 +86,55 @@ body{
 .btn-primary:hover{
   box-shadow:5px 5px 5px rgb(75, 98, 105);
 }
+.hobbies{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-content: center;
+  padding: 50px;
+}
+.hobbies-table{
+  width: 20em;
+}
+h1{
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0%;
+}
+.form{
+  margin: 100px;
+  padding: 20px;
+}
+#contact{
+  font-size: 3em;
+}
+.form-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-content: center;
+  padding: 50px;
+}
+.mb-3 > .btn-primary{
+  margin: 20px 20px 20px 0px;
+}
+textarea{
+  border-radius: 5px;
+  border-color: darkgrey;
+}
 @media (max-width:992px){
   .grid-container{
     display: grid;
     grid-template-columns: auto ;
+  }
+  .form-container{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+  .hobbies-table{
+    width: 15em;
   }
 }
 @media (max-width:576px){
@@ -123,5 +145,8 @@ body{
   .item{
     height: 250px;
     width: 400px;
+  }
+  .hobbies-table{
+    width: 10em;
   }
 }
